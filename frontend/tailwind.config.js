@@ -1,11 +1,10 @@
 /* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
-<<<<<<< HEAD
+
 // eslint-disable-next-line no-undef
-module.exports = {
-=======
+
 export default {
->>>>>>> cf92f37ea9932446efe33e06c604ede4c9e3d311
+
   darkMode: ["class"],
   content: [
     "./pages/**/*.{js,jsx}",
