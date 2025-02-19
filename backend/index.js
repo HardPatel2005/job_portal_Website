@@ -24,9 +24,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 const PORT = process.env.PORT || 3000;
-// app.get("/", (req, res) => {
-//     res.render("index"); // Renders index.ejs
-// });
+
 
 // api's
 app.use("/api/v1/user", userRoute);
@@ -35,7 +33,7 @@ app.use("/api/v1/job", jobRoute);
 app.use("/api/v1/application", applicationRoute);
 
 app.use(express.static(path.join(__dirname, "/frontend/dist")));
-app.get("*", (req, res) => {
+app.get("*", (_, res) => {
   res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
 })
 app.listen(PORT, () => {

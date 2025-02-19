@@ -3,7 +3,8 @@
 
 // eslint-disable-next-line no-undef
 
-export default {
+
+module.exports = {
 
   darkMode: ["class"],
   content: [
